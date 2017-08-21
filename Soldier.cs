@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace IGIProject
 {
-    public abstract class Soldier : IAttacker
+    public abstract class Soldier
     {
         public string Name { get; set; }
         public string Rank { get; set; }
