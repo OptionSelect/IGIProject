@@ -8,7 +8,16 @@ namespace IGIProject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var Speedy = new Pilot();
+            var Snipey = new Sniper();
+            var Healy = new Medic();
+
+            var Army = new List<Soldier>();
+            Army.Add(Speedy);
+            Army.Add(Snipey);
+            Army.Add(Healy);
+
+            Army.ForEach(fighter => fighter.Attack());
         }
     }
 }
