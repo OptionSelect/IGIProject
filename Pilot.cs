@@ -3,9 +3,11 @@ namespace IGIProject
 {
     public class Pilot : Soldier, IPilot
     {
-        public Pilot() : base(new Aircraft())
+        public Pilot(string name, string rank, int serial) : base(new Aircraft())
         {
-            
+            Name = name;
+            Rank = rank;
+            SerialNumber = serial;
         }
 
         public string Aircraft { get; set; }

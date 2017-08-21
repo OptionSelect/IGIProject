@@ -8,9 +8,9 @@ namespace IGIProject
     {
         static void Main(string[] args)
         {
-            var Speedy = new Pilot();
-            var Snipey = new Sniper();
-            var Healy = new Medic();
+            var Speedy = new Pilot("Speedy McSpeederson", "Sgt.", 1234);
+            var Snipey = new Sniper("Snipey McSniperton", "Master Chief", 1);
+            var Healy = new Medic("Healy McHealerone", "Private", 69);
 
             var Army = new List<Soldier>();
             Army.Add(Speedy);

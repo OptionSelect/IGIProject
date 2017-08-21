@@ -4,9 +4,11 @@ namespace IGIProject
 {
     public class Medic : Soldier, IMedic
     {
-        public Medic(): base(new MedKit())
+        public Medic(string name, string rank, int serial): base(new MedKit())
         {
-            
+            Name = name;
+            Rank = rank;
+            SerialNumber = serial;
         }
 
         public string Medkit { get; set; }
