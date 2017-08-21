@@ -6,7 +6,6 @@ namespace IGIProject
 {
     interface IMedic
     {
-        string Medkit { get; set; }
         void NumBandages();
         void NumAlcohol();
     }
