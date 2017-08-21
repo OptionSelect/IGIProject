@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 
 namespace IGIProject
 {
@@ -7,41 +8,35 @@ namespace IGIProject
         void DoDamage();
     }
 
-    public class Rifle: IWeapon
+    public class Rifle : IWeapon
     {
         public void DoDamage()
         {
             Console.WriteLine("Shooting Rifle.");
-            
+
         }
 
-        public override string ToString()
-        {
-            return "Rifle";
-        }
+        public override string ToString() => "Rifle";
     }
 
-    public class MedKit: IWeapon
+    public class MedKit : IWeapon
     {
         public void DoDamage()
         {
             Console.WriteLine("Healing fellow fighters.");
         }
-        public override string ToString()
-        {
-            return "MedKit";
-        }
+
+        public override string ToString() => "MedKit";
     }
 
-    public class Aircraft: IWeapon
+    public class Aircraft : IWeapon
     {
         public void DoDamage()
         {
             Console.WriteLine("Going on a bombing run.");
         }
-        public override string ToString()
-        {
-            return "Aircraft";
-        }
+
+        public override string ToString() => "Aircraft";
+
     }
 }
