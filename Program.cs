@@ -18,6 +18,8 @@ namespace IGIProject
             Army.Add(Healy);
 
             Army.ForEach(fighter => fighter.Attack());
+            Army.ForEach(fighter => fighter.Speak());
+            //Army.ForEach(fighter => Console.WriteLine($"This is my weapon {Weapon}.");
         }
     }
 }
