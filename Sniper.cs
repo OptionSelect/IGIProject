@@ -4,9 +4,11 @@ namespace IGIProject
 {
     public class Sniper : Soldier, ISniper
     {
-        public Sniper() : base(new Rifle())
+        public Sniper(string name, string rank, int serial) : base(new Rifle())
         {
-            
+            Name = name;
+            Rank = rank;
+            SerialNumber = serial;
         }
 
         public string Rifle { get; set; }
