@@ -17,9 +17,9 @@ namespace IGIProject
             Army.Add(Snipey);
             Army.Add(Healy);
 
-            Console.WriteLine($"Pilot: {Speedy.Name}. Rank: {Speedy.Rank}. Serial#: {Speedy.SerialNumber}. Weapon: {Speedy.Weapon}");
-            Console.WriteLine($"Sniper: {Snipey.Name}. Rank: {Snipey.Rank}. Serial#: {Snipey.SerialNumber}. Weapon: {Snipey.Weapon});
-            Console.WriteLine($"Medic: {Healy.Name}. Rank: {Healy.Rank}. Serial#: {Healy.SerialNumber}. Weapon: {Healy.Weapon}");
+            Console.WriteLine($"Pilot: {Speedy.Name}. Rank: {Speedy.Rank}. Serial#: {Speedy.SerialNumber}. Weapon: {Speedy.Weapon}.");
+            Console.WriteLine($"Sniper: {Snipey.Name}. Rank: {Snipey.Rank}. Serial#: {Snipey.SerialNumber}. Weapon: {Snipey.Weapon}.");
+            Console.WriteLine($"Medic: {Healy.Name}. Rank: {Healy.Rank}. Serial#: {Healy.SerialNumber}. Weapon: {Healy.Weapon}.");
             
             Army.ForEach(fighter => fighter.Attack());
             Army.ForEach(fighter => fighter.Speak());

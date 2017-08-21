@@ -14,6 +14,11 @@ namespace IGIProject
             Console.WriteLine("Shooting Rifle.");
             
         }
+
+        public override string ToString()
+        {
+            return "Rifle";
+        }
     }
 
     public class MedKit: IWeapon
@@ -21,7 +26,10 @@ namespace IGIProject
         public void DoDamage()
         {
             Console.WriteLine("Healing fellow fighters.");
-            
+        }
+        public override string ToString()
+        {
+            return "MedKit";
         }
     }
 
@@ -30,7 +38,10 @@ namespace IGIProject
         public void DoDamage()
         {
             Console.WriteLine("Going on a bombing run.");
-            
+        }
+        public override string ToString()
+        {
+            return "Aircraft";
         }
     }
 }
